@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKOUT</title>
+    <!-- own css main file -->
+    <link rel="stylesheet" href="checkout.css">
+    <!-- own css navbar file -->
+    <link rel="stylesheet" href="navbar.css">
+    <!-- own colour css file -->
+    <link rel="stylesheet" href="colour.css">
+    <!-- fontawesome css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!-- google font poppin's link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <!-- favicon link -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body>
+    <!-- header starts here -->
+    <header>
+        <div class="icons">
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook-f icon"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-twitter icon"></i></a>
+            <a href="https://instagram.com"><i class="fa-brands fa-instagram icon"></i></a>
+            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in icon"></i></a>
+        </div>
+        <div class="user">
+            <a href="index.html">login |</a><a href="register.html"> register </a>
+        </div>
+    </header>
+
+    <!-- navbar starts here -->
+    <div class="navbar">
+        <div class="logo">
+            <span>Bookly.</span>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+            <a href="order.html">Order</a>
+        </nav>
+        <div class="icons">
+            <div class="menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <a href="search.html"><i class="fa-solid fa-magnifying-glass icon"></i></a>
+            <i class="fa-solid fa-user icon"></i>
+            <span>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping icon icon-3"></i></a>
+                <span>(<span class="cart">0</span>)</span>
+            </span>
+        </div>
+    </div>
+
+    <!-- home section starts here -->
+    <section id="home">
+        <div class="content">
+            <h1>CHECKOUT</h1>
+            <div class="link">
+                <a href="home.html">Home</a> / <span>checkout</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- details section starts here -->
+    <section id="details">
+        <div class="content">
+            <div class="empty">
+                your cart is empty
+            </div>
+            <div class="total">
+                <p>grand total :<span class="grand-total">$0/-</span></p>
+            </div>
+        </div>
+
+        <form action="" class="form">
+            <h1 class="heading">PLACE YOUR ORDER</h1>
+            <div class="row">
+                <div class="col col-1">
+                    <div class="name">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" minlength="3" maxlength="20" placeholder="Enter Your Name">
+                    </div>
+                    <div class="email">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" placeholder="Enter Your Email">
+                    </div>
+                    <div class="address-1">
+                        <label for="address-1" minlength="5">address line 01:</label>
+                        <input type="text" id="address-1" placeholder="e.g. flat no.">
+                    </div>
+                    <div class="city">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" placeholder="e.g. mumbai">
+                    </div>
+                    <div class="email">
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" placeholder="e.g. india">
+                    </div>
+                </div>
+                <div class="col col-2">
+                    <div class="number">
+                        <label for="number">Your Number:</label>
+                        <input type="number" id="number" maxlength="12" placeholder="Enter Your Number"
+                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"">
+                </div>
+                <div class=" payment">
+                        <label for="payment">Payment Method:</label>
+                        <select name="" id="payment">
+                            <option value="cash on delivery">cash on delivery</option>
+                            <option value="credit card">Credit Card</option>
+                            <option value="phonepe">Phonepe</option>
+                            <option value="UPI">UPI</option>
+                        </select>
+                    </div>
+                    <div class="address-2">
+                        <label for="address-2" minlength="5">address line 01:</label>
+                        <input type="text" id="address-2" placeholder="e.g. flat no.">
+                    </div>
+                    <div class="city">
+                        <label for="state">State:</label>
+                        <input type="email" id="state" placeholder="e.g. maharashtra">
+                    </div>
+                    <div class="email">
+                        <label for="pin">Pin Code:</label>
+                        <input type="text" id="pin" placeholder="e.g. 123456">
+                    </div>
+                </div>
+            </div>
+            <div class="submit">
+                <button type="submit" class="btn">Order Now</button>
+            </div>
+        </form>
+    </section>
+    <!-- footer starts here -->
+    <footer>
+        <div class="container">
+            <div class="col col-1">
+                <h4 class="heading">QUICK LINKS</h4>
+                <span>
+                    <a href="home.html">home</a>
+                </span>
+                <span>
+                    <a href="about.html">about</a>
+                </span>
+                <span>
+                    <a href="shop.html">shop</a>
+                </span>
+                <span>
+                    <a href="contact.html">contact</a>
+                </span>
+            </div>
+            <div class="col col-2">
+                <h4 class="heading">EXTRA LINKS</h4>
+                <span>
+                    <a href="login.html">Login</a>
+                </span>
+                <span>
+                    <a href="register.html">register</a>
+                </span>
+                <span>
+                    <a href="cart.html">cart</a>
+                </span>
+                <span>
+                    <a href="order.html">orders</a>
+                </span>
+            </div>
+            <div class="col col-3">
+                <h4 class="heading">CONTACT INFO</h4>
+                <span class="icon-container">
+                    <i class="fa-solid fa-phone icon"></i>
+                    <a href="tel:+919892564710">+91-9892564710</a>
+                </span>
+                <span class="icon-container">
+                    <i class="fa-solid fa-phone icon"></i>
+                    <a href="tel:+919892564710">+91-9892564710</a>
+                </span>
+                <span class="icon-container">
+                    <i class="fa-solid fa-envelope icon"></i>
+                    <a href="mailto:ansariammar3271@gmail.com">ansariammar3271@gmail.com</a>
+                </span>
+                <span class="icon-container">
+                    <i class="fa-solid fa-location-dot icon"></i>
+                    <a href="https://goo.gl/maps/aNLNfhFCA9oFSVEE6" target="_blank"> mumbai, india - 400072 </a>
+                </span>
+            </div>
+            <div class="col col-4">
+                <h4 class="heading">FOLLOW US</h4>
+                <span class="icon-container">
+                    <i class="fa-brands fa-facebook-f icon"></i>
+                    <a href="https://facebook.com">facebook</a>
+                </span>
+                <span class="icon-container">
+                    <i class="fa-brands fa-twitter icon"></i>
+                    <a href="https://twitter.com">twitter</a>
+                </span>
+                <span class="icon-container">
+                    <i class="fa-brands fa-instagram icon"></i>
+                    <a href="https://instagram.com">instagram</a>
+                </span>
+                <span class="icon-container">
+                    <i class="fa-brands fa-linkedin-in icon"></i>
+                    <a href="https://linkedin.com">linked in</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- copyright starts here -->
+    <div class="copyright">
+        <span>
+            &copy; copyright @ 2022 by <span class="developer">Ammar.web designer</span>
+        </span>
+    </div>
+
+    <!-- own js file link  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
